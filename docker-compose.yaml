@@ -1,0 +1,11 @@
+version: "3.3"
+
+services:
+  postgresql:
+    build:
+      context: postgresql
+    environment:
+      POSTGRES_PASSWORD: root
+      POSTGRES_USER: root
+    ports:
+      - "5432:5432"
